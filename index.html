@@ -5,39 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Cache-control" content="no-cache">
   <link rel="stylesheet" type="text/css" href="style.css">
+ 
   
     <title>Bish Bosh 2.0 </title>
 </head>
-<body id="body">
+<body id="body" class="willnotrender">
   <h1>Bish Bosh 2.0 </h1>
   <h4>How to use:</h4>
   <p>The user enters a low number (A) and a higher number (B), and another number as a higher limit, and the program will print Bish for all numbers divisible by A, Bash for all numbers divisible by B, and Bish-Bash for all numbers divisible by both A and B util the limit number is reached. If the number is not divisible with neither A, B , A*B, the program will print the number.The number has to be a positive number!</p>
     <form action="">
     <label for="firstNum">Enter a number (Bish)</label>
-      <input id='bish' type="text" name="firstNum" placeholder="Enter a number -Bish">
+      <input id='bish' type="text" name="firstNum" value="" placeholder="Enter a number -Bish">
     <br>
     <label for="secondNum">Enter a number (Bash)</label>
-      <input id='bosh' type="text" name="secondNum" placeholder="Enter a number -Bash">
+      <input id='bosh' type="text" name="secondNum" value="" placeholder="Enter a number -Bash">
     <br>
     <label  for="limitNum">Enter any number</label>
-      <input id='limit' type="text" name="limitNum" placeholder="Enter a number -Bash">
+      <input id='limit' type="text" name="limitNum" value="" placeholder="Enter a number -Bash">
    
     <button id="btn" >Submit</button>
-    <button id="clear" onClick="window.location.reload();">Clear</button>
+    <button id="clear" >Clear</button>
 
 </form>
   
   <h5 id="error"></h5>
+  <h4>Below are the prints of this exercise:</h4>
  <div id="list-group">
-    <h4>Below are the prints of this exercise:</h4>
+    
     <ul id="list"></ul>
-    <script type="text/javascript" src="bishbosh.js"></script>
+   
 
  </div>       
   
   <footer>Built by Alex Cocan | Lexicon Project</footer>
 
-
+  <script type="text/javascript" src="bishbosh.js"></script>
   
 </body>
 </html>
