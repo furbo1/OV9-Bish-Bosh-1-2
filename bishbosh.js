@@ -70,6 +70,12 @@ function BishBosh2(bish,bosh, limit){
     err.appendChild(text)
     }
     
+  }else if(bish === "" || bosh === "" || limit === ""){
+    if(err.innerText == ""){
+      let text = document.createTextNode('Fields cannot be blank!')
+    err.appendChild(text)
+    }
+    
   }
   else  {
     

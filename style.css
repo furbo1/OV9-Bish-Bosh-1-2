@@ -75,14 +75,6 @@ body{
       align-items: center;
   }
 
-  /* #list-group
-  {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-     margin: 0;
-  } */
-
   .willnotrender { 
     transform: translateZ(0); 
  }
