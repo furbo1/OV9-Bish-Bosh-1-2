@@ -54,6 +54,11 @@ let list = document.getElementById('list')
 let btn = document.getElementById('btn')
 let clr = document.getElementById('clear')
 
+// function removeAllChildNodes(list) {
+//   while (list.firstChild) {
+//       list.removeChild(parent.firstChild);
+//   }
+// }
 
 function BishBosh2(bish,bosh, limit){
   bish = bishInput.value;
@@ -77,7 +82,8 @@ function BishBosh2(bish,bosh, limit){
     }
     
   }
-  else  {
+  else {
+    list.innerHTML = "";
     
     for(let i = 1; i < limit; i++)
     {
@@ -87,9 +93,7 @@ function BishBosh2(bish,bosh, limit){
         li.appendChild(text)
         
         list.appendChild(li)
-        
-       
-         
+    
       }else if(i % bish === 0){
         let li = document.createElement("li")
         let text = document.createTextNode("Bish")
@@ -121,14 +125,16 @@ function BishBosh2(bish,bosh, limit){
 }
 
 
+
 function Clear(){
-  // form.reset();
+
   document.getElementById('bish').setAttribute("value", "")
   
   document.getElementById('bosh').setAttribute("value", "")
   
   document.getElementById('limit').setAttribute("value", "")
   
+
 }
 
 btn.addEventListener("click", (e)=>{
