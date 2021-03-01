@@ -55,12 +55,6 @@ let btn = document.getElementById('btn')
 let clr = document.getElementById('clear')
 
 
-
-// function changeField(e){
-//   e.target.id = e.target.value
-//   console.log(e.target.value)
-// }
-
 function BishBosh2(bish,bosh, limit){
   bish = bishInput.value;
   bosh = boshInput.value;
@@ -77,7 +71,7 @@ function BishBosh2(bish,bosh, limit){
     }
     
   }
-  else if(!list.firstChild) {
+  else  {
     
     for(let i = 1; i < limit; i++)
     {
@@ -133,6 +127,7 @@ function Clear(){
 
 btn.addEventListener("click", (e)=>{
   e.preventDefault();
+  Clear()
   bishInput.addEventListener('change', function() {
     document.getElementById('bish').setAttribute("value", bishInput.value)
     
